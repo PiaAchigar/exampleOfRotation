@@ -53,9 +53,25 @@ transform:rotate(90deg);
     border-radius:5px;
     padding:5px 10px;
 }
-#css-apuntar0{
+.css-apuntar0{
     /* transform:rotate(-90deg); */
-    rotate:45deg;
+    transition: transform .8s ease-in-out;
+    transform:rotate(-90deg);
 }
 /*https://css-tricks.com/almanac/properties/r/rotate/#:~:text=While%20CSS%20already%20has%20another%20way%20to%20rotate,transform%20property%2C%20like%20this%3A.element%20%7B%20transform%3A%20rotate%2845deg%29%3B%20%7D*/
 /*how to rotate objects in css*/
+.css-apuntar90{
+    /* transform:rotate(-90deg); */
+    transition: transform .8s ease-in-out;
+    transform:rotate(1deg);
+}
+.css-apuntar180{
+    /* transform:rotate(-90deg); */
+    transition: transform .8s ease-in-out;
+    transform:rotate(90deg);
+}
+.css-apuntar270{
+    /* transform:rotate(-90deg); */
+    transition: transform .8s ease-in-out;
+    transform:rotate(180deg);
+}
