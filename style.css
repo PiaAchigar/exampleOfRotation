@@ -1,0 +1,61 @@
+html, body{
+    width: 80%;
+    height: 100%;
+    margin:0;
+    background-color: rgba(9, 16, 8);
+}
+.container{
+    border:2px solid rgb(252, 251, 251);
+    border-radius:50%;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows:1fr 2fr 1fr;
+    grid-gap: 30px;
+    place-items: center;
+    padding:30px;
+    margin:25px auto;
+}
+div{
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+}
+div:hover{
+    cursor:pointer;
+}
+#animalito{
+    display:grid;
+    place-items: center;
+}
+.animalito-rotate-menos{
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        -ms-transition: -ms-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    transform:rotate(-90deg);
+}
+.animalito-rotate-mas{
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    -ms-transition: -ms-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+transform:rotate(90deg);
+}
+.botonera{
+    width: 100%;
+    margin-top: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    place-items: center;
+}
+.boton{
+    border:solid 2px white;
+    border-radius:5px;
+    padding:5px 10px;
+}
+#css-apuntar0{
+    /* transform:rotate(-90deg); */
+    rotate:45deg;
+}
+/*https://css-tricks.com/almanac/properties/r/rotate/#:~:text=While%20CSS%20already%20has%20another%20way%20to%20rotate,transform%20property%2C%20like%20this%3A.element%20%7B%20transform%3A%20rotate%2845deg%29%3B%20%7D*/
+/*how to rotate objects in css*/
