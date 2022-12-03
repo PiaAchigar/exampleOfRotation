@@ -4,10 +4,10 @@
 // document.querySelector("#mas").addEventListener("click", (e)=>{
 //     animalito.classList.toggle("animalito-rotate-mas")
 // })
-// document.querySelector(".boton").addEventListener("click", (e)=>{
-//     animalito.classList.remove("animalito-rotate-mas")
-//     animalito.classList.remove("animalito-rotate-menos")
-// })
+document.querySelector(".boton").addEventListener("click", (e)=>{
+    animalito.classList.remove("css-apuntar0")
+    animalito.classList.remove("css-apuntar90")
+})
 //cuando toque los btn, haga un cambio de img con un setTimeout
 document.querySelector("#apuntar0").addEventListener("click", (e)=>{
     console.log("hola 0grados")
