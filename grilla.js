@@ -39,7 +39,7 @@ function estamparElObjetoEnLaGrilla(celda) {
   celdaGrilla.innerHTML = "";
   console.log(celdaGrilla);
   let etiqImg = document.createElement("img");
-  etiqImg.src = `./img/${animalitoBandera}.png`;
+  etiqImg.src = `/img/${animalitoBandera}.png`;
   switch (animalitoBandera) {
     case "pato":
     case "carpincho":
