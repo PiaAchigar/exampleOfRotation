@@ -6,7 +6,7 @@ window.addEventListener("click", (e) => {
   //console.log(e.target)
   let evento = e.target.id.split("-");
   if (evento[0] == "id" && !isNaN(evento[1])) {
-    console.log("Es la cantidad de celdas");
+    //console.log("Es la cantidad de celdas");
     grilla = evento[1];
     renderizarCeldas(grilla);
   }
@@ -40,7 +40,7 @@ function estamparElObjetoEnLaGrilla(celda) {
   //console.log(celdaGrilla);
   let etiqImg = document.createElement("img");
   console.log(animalitoBandera);
-  etiqImg.src = `../img/${animalitoBandera}.png`;
+  etiqImg.src = `/../img/${animalitoBandera}.png`;
   switch (animalitoBandera) {
     case "pato":
     case "carpincho":
