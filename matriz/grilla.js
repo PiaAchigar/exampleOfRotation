@@ -1,3 +1,6 @@
+// fetchJsonp('http://localhost:3000')
+//   .then(res => res.json())
+//   .then(json => console.log(json));
 let main = document.querySelector(".grilla");
 let grilla = 25;
 let animalitoBandera;
