@@ -13,14 +13,14 @@ window.addEventListener("click", (e) => {
 
   if (evento[0] == "id" && isNaN(evento[1])) {
     //console.log("Es una animal o banderita")
-    console.log(animalitoBandera);
+    //console.log(animalitoBandera);
     animalitoBandera = evento[1];
-    console.log(animalitoBandera);
+    //console.log(animalitoBandera);
   }
 
   if (evento[0] == "div") {
     //console.log("Es una celda")
-    console.log(e.target.id);
+    //console.log(e.target.id);
     estamparElObjetoEnLaGrilla(e.target.id);
   }
 });
@@ -37,8 +37,9 @@ function renderizarCeldas(celdas) {
 function estamparElObjetoEnLaGrilla(celda) {
   let celdaGrilla = document.getElementById(`${celda}`);
   celdaGrilla.innerHTML = "";
-  console.log(celdaGrilla);
+  //console.log(celdaGrilla);
   let etiqImg = document.createElement("img");
+  console.log(animalitoBandera);
   etiqImg.src = `../img/${animalitoBandera}.png`;
   switch (animalitoBandera) {
     case "pato":
