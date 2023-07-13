@@ -1,11 +1,18 @@
 html, body{
-    width: 80%;
+    width: 100%;
     height: 100%;
     margin:0;
-    background-color: rgba(9, 16, 8);
+    /* background-color: rgba(9, 16, 8); */
+    color:rgba(9, 16, 8);
+}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .container{
-    border:2px solid rgb(252, 251, 251);
+    /* border:2px solid rgb(252, 251, 251); */
+    border:4px solid black;
     border-radius:50%;
     width: 500px;
     height: 500px;
@@ -18,7 +25,7 @@ html, body{
     margin:25px auto;
 }
 div{
-    color:white;
+    /* color:white; */
     font-size: 30px;
     font-weight: bold;
 }
@@ -34,30 +41,38 @@ div:hover{
         -webkit-transition: -webkit-transform .8s ease-in-out;
         -ms-transition: -ms-transform .8s ease-in-out;
         transition: transform .8s ease-in-out;
-    transform:rotate(-90deg);
+        transform:rotate(-90deg);
 }
 .animalito-rotate-mas{
     -webkit-transition: -webkit-transform .8s ease-in-out;
     -ms-transition: -ms-transform .8s ease-in-out;
     transition: transform .8s ease-in-out;
-transform:rotate(90deg);
+    transform:rotate(90deg);
 }
 .botonera{
     width: 100%;
     margin-top: 10px;
     display:grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns:1fr 2fr 1fr 2fr 1fr;
     place-items: center;
+    gap:10px;
 }
-.boton{
-    border:solid 2px white;
+.reset{
+    border:1px solid black;
     border-radius:5px;
     padding:5px 10px;
 }
-.css-apuntar0{
+.ajustarBtns{
+    width: 100%;
+}
+.css-apuntar-90{
     /* transform:rotate(-90deg); */
     transition: transform .8s ease-in-out;
     transform:rotate(-90deg);
+}
+.css-apuntar0{
+    transition: transform .8s ease-in-out;
+    transform:rotate(0deg);
 }
 /*https://css-tricks.com/almanac/properties/r/rotate/#:~:text=While%20CSS%20already%20has%20another%20way%20to%20rotate,transform%20property%2C%20like%20this%3A.element%20%7B%20transform%3A%20rotate%2845deg%29%3B%20%7D*/
 /*how to rotate objects in css*/
@@ -76,3 +91,9 @@ transform:rotate(90deg);
     transition: transform .8s ease-in-out;
     transform:rotate(270deg);
 }
+/* .noventaMas{
+    transform:rotate(90deg);
+}
+.noventaMenos{
+    transform:rotate(0deg);
+} */

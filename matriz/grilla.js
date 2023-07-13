@@ -10,8 +10,8 @@ window.addEventListener("click", (e) => {
   let evento = e.target.id.split("-");
   if (evento[0] == "id" && !isNaN(evento[1])) {
     //console.log("Es la cantidad de celdas");
-    grilla = evento[1];
-    renderizarCeldas(grilla);
+    //envio el numero de celdas a renderizar
+    renderizarCeldas(evento[1]);
   }
 
   if (evento[0] == "id" && isNaN(evento[1])) {
