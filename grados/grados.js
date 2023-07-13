@@ -5,6 +5,7 @@
 //     animalito.classList.toggle("animalito-rotate-mas")
 // })
 const animalito = document.querySelector("#animalito");
+const lancha = document.querySelector("#lancha");
 const etiqStyle = document.createElement("STYLE");
 let gradosAgirar = 0;
 // let accGirarMenos90 = 0;
@@ -64,10 +65,22 @@ document.querySelector("#girarMas90").addEventListener("click", (e) => {
   document.querySelector("head").appendChild(etiqStyle);
   animalito.classList.add("apuntar");
 });
-// document.querySelector("#apuntar180").addEventListener("click", (e) => {
-//   animalito.classList.toggle("css-apuntar180");
-// });
-// document.querySelector("#apuntar270").addEventListener("click", (e) => {
-//   console.log("hola 0grados");
-//   animalito.classList.toggle("css-apuntar270");
-// });
+
+//Para la Lancha
+
+document.querySelector("#apuntar0").addEventListener("click", (e) => {
+  lancha.classList =""
+  lancha.classList.add("css-apuntar-90");
+});
+document.querySelector("#apuntar90").addEventListener("click", (e) => {
+  lancha.classList =""
+  lancha.classList.add("css-apuntar0");
+});
+document.querySelector("#apuntar180").addEventListener("click", (e) => {
+  lancha.classList =""
+  lancha.classList.add("css-apuntar90");
+});
+document.querySelector("#apuntar270").addEventListener("click", (e) => {
+  lancha.classList =""
+  lancha.classList.add("css-apuntar180");
+});
